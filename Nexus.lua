@@ -2525,7 +2525,11 @@ WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Therealtobu/
 Window = WindUI:CreateWindow({
     Title = "Flare hub",
     Desc = "- Blox Fruit",
-    Image = "rbxassetid://5009915795"
+    Image = "rbxassetid://5009915795",
+    User = {
+        Enabled = true,
+        Anonymous = false
+    }
 })
 
 WindUI:Notify({
@@ -2534,9 +2538,9 @@ WindUI:Notify({
     Duration = 3
 })
 
-Shop = Window:Tab({Title = "Shop", Icon = "lucide:hash"})
-Status1 = Window:Tab({Title = "Status And Server", Icon = "lucide:hash"})
-Player = Window:Tab({Title = "LocalPlayer", Icon = "lucide:hash"})
+Shop = Window:Tab({Title = "Shop", Icon = "lucide:shopping-cart"})
+Status1 = Window:Tab({Title = "Status And Server", Icon = "lucide:server"})
+Player = Window:Tab({Title = "LocalPlayer", Icon = "lucide:user"})
 
 -- ========================================
 -- LOCAL PLAYER TAB
@@ -2749,20 +2753,20 @@ SectionLP4:Button({
 })
 
 
-Setting = Window:Tab({Title = "Setting Farm", Icon = "lucide:hash"})
-Farm = Window:Tab({Title = "Farming", Icon = "lucide:hash"})
-Others = Window:Tab({Title = "Farming Other", Icon = "lucide:hash"})
-Fruit = Window:Tab({Title = "Fruit and Raid, Dunge", Icon = "lucide:hash"})
-Event = Window:Tab({Title = "Sea Event", Icon = "lucide:hash"})
-Race = Window:Tab({Title = "Upgrade Race", Icon = "lucide:hash"})
-Get = Window:Tab({Title = "Get and Upgrade Item", Icon = "lucide:hash"})
-Dojo = Window:Tab({Title = "Volcano Event", Icon = "lucide:hash"})
-Esp = Window:Tab({Title = "ESP", Icon = "lucide:hash"})
-Front = Window:Tab({Title = "PVP", Icon = "lucide:hash"})
-Discord = Window:Tab({Title = "Tab Webhook", Icon = "lucide:hash"})
-Teleport = Window:Tab({Title = "Teleport", Icon = "lucide:hash"})
-Setting1 = Window:Tab({Title = "Setting", Icon = "lucide:hash"})
-Maestry = Window:Tab({Title = "Mastery Farm", Icon = "lucide:hash"})
+Setting = Window:Tab({Title = "Setting Farm", Icon = "lucide:settings"})
+Farm = Window:Tab({Title = "Farming", Icon = "lucide:sword"})
+Others = Window:Tab({Title = "Farming Other", Icon = "lucide:boxes"})
+Fruit = Window:Tab({Title = "Fruit and Raid, Dunge", Icon = "lucide:apple"})
+Event = Window:Tab({Title = "Sea Event", Icon = "lucide:waves"})
+Race = Window:Tab({Title = "Upgrade Race", Icon = "lucide:dna"})
+Get = Window:Tab({Title = "Get and Upgrade Item", Icon = "lucide:backpack"})
+Dojo = Window:Tab({Title = "Volcano Event", Icon = "lucide:flame"})
+Esp = Window:Tab({Title = "ESP", Icon = "lucide:eye"})
+Front = Window:Tab({Title = "PVP", Icon = "lucide:crosshairs"})
+Discord = Window:Tab({Title = "Tab Webhook", Icon = "lucide:webhook"})
+Teleport = Window:Tab({Title = "Teleport", Icon = "lucide:map-pin"})
+Setting1 = Window:Tab({Title = "Setting", Icon = "lucide:cog"})
+Maestry = Window:Tab({Title = "Mastery Farm", Icon = "lucide:graduation-cap"})
 --/// TAB discord
 Section1 = Discord:Section({Title = "My Discord"})
 Section1:Paragraph({Title = "Join the server"})
@@ -10445,6 +10449,7 @@ SectionHop:Button({Title="Hop: Prehistoric Island",Callback=function() game:Http
 SectionHop:Button({Title="Hop: Cake Prince",       Callback=function() game:HttpGet("http://nighthub.site/boss/CakePrince") end})
 SectionHop:Button({Title="Hop: Elite Hunter",      Callback=function() game:HttpGet("http://nighthub.site/boss/Elite") end})
 SectionHop:Button({Title="Hop: Castle Raid",       Callback=function() game:HttpGet("http://nighthub.site/boss/CastleRaid") end})
+
 
 
 
