@@ -2526,6 +2526,7 @@ Window = WindUI:CreateWindow({
     Title = "Flare hub",
     Desc = "- Blox Fruit",
     Image = "rbxassetid://5009915795",
+    Acrylic = true,
     User = {
         Enabled = true,
         Anonymous = false
@@ -10449,6 +10450,7 @@ SectionHop:Button({Title="Hop: Prehistoric Island",Callback=function() game:Http
 SectionHop:Button({Title="Hop: Cake Prince",       Callback=function() game:HttpGet("http://nighthub.site/boss/CakePrince") end})
 SectionHop:Button({Title="Hop: Elite Hunter",      Callback=function() game:HttpGet("http://nighthub.site/boss/Elite") end})
 SectionHop:Button({Title="Hop: Castle Raid",       Callback=function() game:HttpGet("http://nighthub.site/boss/CastleRaid") end})
+
 
 
 
