@@ -2523,13 +2523,23 @@ WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Therealtobu/
 
 
 Window = WindUI:CreateWindow({
-    Title = "Flare hub",
-    Desc = "- Blox Fruit",
-    Image = "rbxassetid://5009915795",
+    Title = "Nexus",
+    Author = "by TuanDz",
+    Icon = "rbxassetid://120488231660846",
+    Theme = "Dark",
+    NewElements = true,
+    Transparent = true,
     Acrylic = true,
     User = {
         Enabled = true,
-        Anonymous = false
+        Anonymous = false,
+        Callback = function()
+            WindUI:Notify({
+                Title = "Profile",
+                Content = "Bạn vừa nhấn vào ảnh đại diện!",
+                Icon = "rbxassetid://120488231660846"
+            })
+        end
     }
 })
 
@@ -10052,6 +10062,14 @@ SectionFruit2:Button({
 })
 end
 Section44 = Setting1:Section({Title = "Other Settings"})
+
+Section44:Toggle({
+    Title = "Hiệu ứng làm mờ (Acrylic)",
+    Default = true,
+    Callback = function(v) WindUI:ToggleAcrylic(v) end
+})
+
+
 
 Players = game:GetService("Players")
 player = Players.LocalPlayer
