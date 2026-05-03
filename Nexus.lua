@@ -2533,13 +2533,7 @@ Window = WindUI:CreateWindow({
     User = {
         Enabled = true,
         Anonymous = false,
-        Callback = function()
-            WindUI:Notify({
-                Title = "Profile",
-                Content = "Bạn vừa nhấn vào ảnh đại diện!",
-                Icon = "rbxassetid://120488231660846"
-            })
-        end
+        Callback = function() end
     }
 })
 
